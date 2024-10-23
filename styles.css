@@ -1,0 +1,120 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+ body{
+    background-color: hsl(0, 0%, 98%);
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    color: hsl(234, 12%, 34%);
+}
+main{
+    width: 90%;
+    /* height: 90vh; */
+    padding: 15px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+}
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 40%;
+    margin: 0px auto;
+    justify-content: center;
+    text-align: center;
+}
+header div{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+}
+header div h2{
+    font-weight: 200;
+}
+header div h2:nth-child(2){
+    font-weight: 600;
+}
+header p{
+    font-weight: 200;
+    text-align: center;
+    padding: 0 10px;
+}
+section{
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0px auto;
+
+}
+.featurecard{
+    background-color: white;
+    width: 350px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-top-width: 3px;  
+    border-top-style: solid; 
+    border-top-color: violet;
+    border-radius: 8px;
+    box-shadow: 2px 5px 4px hsl(229, 6%, 66%);
+}
+.featureimg{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.featurecarddoublediv{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+#super{
+    border-color:  hsl(180, 62%, 55%);
+}
+#team{
+    border-color:  hsl(0, 78%, 62%);
+}
+#karma{
+    border-color:  hsl(34, 97%, 64%);
+}
+#cal{
+    border-color:  hsl(180, 62%, 55%);
+}
+
+@media screen and (max-width: 620px) {
+
+header {
+    padding: 16px;
+    width: 100%;
+}
+section{
+    padding: 35px 8px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+}
+.featurecarddoublediv{
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+}
+header div,
+header p{
+    text-align: left;
+    padding: 0;
+}  }
